@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+  <bean id="employee" name="test1" class="md.orange.examples.pojos.Employee">
+    <property name="name" value="employer for application-context from res files"></property>
+  </bean>
+  <bean id="new employee" class="md.orange.examples.pojos.Employee" >
+    <property name="name" value="new employer for application-context loaded from res files"></property>
+  </bean>
+
+  <!--Event Handlers-->
+  <bean id="startEventHandler"
+    class="md.orange.examples.application.context.StartEventHandler" />
+  <bean id="stopEventHandler"
+    class="md.orange.examples.application.context.StopEventHandler" />
+</beans>
